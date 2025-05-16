@@ -1,71 +1,65 @@
-/* Основной стиль для приложения */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f7f7f7;
-  margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #6f3da8;
   margin-bottom: 30px;
 }
 
-/* Стиль контейнера для всего приложения */
 .app-container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(147, 0, 177, 0.1);
 }
 
-/* Стиль для заголовков */
 h2 {
   text-align: center;
   font-size: 24px;
   color: #444;
 }
 
-/* Стиль для формы добавления задачи */
 .add-task-form {
   display: flex;
-  margin-bottom: 20px;
 }
 
 .add-task-form input {
   flex: 1;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 50px;
   outline: none;
 }
 
 .add-task-form button {
+  margin-left: 20px;
   padding: 10px 15px;
-  margin-left: 10px;
-  background-color: #4caf50;
+  font-weight: bold;
+  background-color: #6f3da8;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
 }
 
 .add-task-form button:hover {
-  background-color: #45a049;
+  background-color: #7e7e7e;
 }
 
-/* Стиль для списка задач */
+
 .task-list {
   list-style: none;
-  padding: 0;
+  padding: 10px 0; 
   margin: 0;
 }
 
-/* Стиль для отдельной задачи */
 .task-item {
   display: flex;
   align-items: center;
@@ -73,26 +67,27 @@ h2 {
   padding: 10px;
   background-color: #fafafa;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-bottom: 10px;
 }
 
 .task-item button {
-  background-color: #f44336;
+  background-color: #6d6d6d;
   color: white;
   border: none;
   padding: 5px 10px;
-  border-radius: 5px;
+  margin-left: 6px;
+  border-radius: 50px;
   cursor: pointer;
 }
 
 .task-item button:hover {
-  background-color: #e53935;
+  background-color: #6f3da8;
 }
 
 .task-item.completed {
   text-decoration: line-through;
-  color: #888;
+  color: #9680af;
 }
 
 .task-item .task-text {
@@ -100,7 +95,6 @@ h2 {
   padding: 0 10px;
 }
 
-/* Стиль для фильтра задач */
 .filter-container {
   display: flex;
   justify-content: center;
@@ -108,20 +102,22 @@ h2 {
 }
 
 .filter-button {
-  padding: 10px 15px;
+  padding: 5px 15px;
   margin: 0 10px;
-  background-color: #2196f3;
-  color: white;
+  background-color: #f3f3f3;
+  color: #6f3da8;
+  font-weight: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
 }
 
 .filter-button:hover {
-  background-color: #1976d2;
+  background-color: #dddddd;
 }
 
 .filter-button.active {
-  background-color: #1976d2;
-  border: 2px solid #1565c0;
+  background-color: #6f3da8;
+  border: none;
+  color: #fff;
 }

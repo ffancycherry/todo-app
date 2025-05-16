@@ -28,8 +28,8 @@ function Task({ task, onToggle, onDelete, onEdit }) {
             {task.text}
           </span>
           <div>
-            <button onClick={() => onDelete(task.id)}>Удалить</button>
             <button onClick={() => setIsEditing(true)}>Редактировать</button>
+            <button onClick={() => onDelete(task.id)}>Удалить</button>
           </div>
         </>
       )}
