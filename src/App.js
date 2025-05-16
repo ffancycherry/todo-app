@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AddTask from './components/AddTask';
 import TaskList from './components/TaskList';
 import Filter from './components/Filter';
-import './App.css'; // подключаем стили
+import './App.css';
 
 function App() {
   const [tasks, setTasks] = useState([]);
